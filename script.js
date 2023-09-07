@@ -15,7 +15,7 @@ document.querySelector('#bell-icon').onclick = () => {
 }
 
 // Swipper
-var swiper = new Swiper(".action-content", {
+var swiper = new Swiper(".game-content", {
   slidesPerView: 1,
   spaceBetween: 10,
   pagination: {

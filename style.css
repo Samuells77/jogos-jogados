@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -15,7 +15,7 @@
   --main-color: #00d42e;
   --dark-color: #121718;
   --light-color: #27302c;
-  --text-color: hsl(0,0%,91%);
+  --text-color: hsl(0, 0%, 91%);
 }
 
 ::selection {
@@ -24,7 +24,7 @@
 }
 
 section {
-  padding: 4rem 0 3rem;
+  padding: 5rem 0 3rem;
 }
 
 img {
@@ -96,7 +96,7 @@ header {
 }
 
 #bell-icon span {
-  content: '';
+  content: "";
   width: 5px;
   height: 5px;
   border-radius: 50;
@@ -171,7 +171,6 @@ header {
   row-gap: 1rem;
   text-align: right;
   padding-right: 2rem;
-
 }
 
 .navbar a {
@@ -181,7 +180,7 @@ header {
   transition: 0.2s;
 }
 
-.navbar a:hover{
+.navbar a:hover {
   border-bottom: 4px solid var(--main-color);
   font-size: 1.8rem;
 }
@@ -224,7 +223,7 @@ header {
   background: hsl(0, 0%, 100%, 0.4);
 }
 
-.box-color .bx{
+.box-color .bx {
   color: #d40000;
 }
 
@@ -251,7 +250,7 @@ header {
   text-align: right;
 }
 
-.home-text h1{
+.home-text h1 {
   font-size: 2.4rem;
   text-transform: uppercase;
   color: var(--dark-color);
@@ -315,7 +314,7 @@ header {
   margin-bottom: 0.8rem;
 }
 
-.racing-content {
+.games-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   gap: 1.2rem;
@@ -328,12 +327,12 @@ header {
   margin-top: 1rem;
 }
 
-.next-page a{
+.next-page a {
   background: var(--main-color);
   padding: 10px 20px;
   color: var(--text-color);
   letter-spacing: 1px;
-  font-weight:  500;
+  font-weight: 500;
 }
 
 .next-page a:hover {
@@ -373,4 +372,98 @@ footer {
   font-size: 0.938rem;
   margin-top: 1rem;
   text-align: justify;
+}
+
+/* Making Responsive - BreakPoints */
+@media (max-width: 1080px) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .nav {
+    padding: 10px 0;
+  }
+  .notification {
+    right: 4rem;
+  }
+  .section {
+    padding: 3rem 0 2rem;
+  }
+  .home {
+    margin-top: 4rem !important;
+    min-height: 440px;
+  }
+  .home img {
+    border-radius: 1rem;
+  }
+  .home-text {
+    padding-right: 0.8rem;
+  }
+  .home-text h1 {
+    font-size: 2rem;
+  }
+  .games-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+  .video-container {
+    margin-top: 5rem !important;
+  }
+}
+
+/* For Medium Devices */
+@media (max-width: 774px) {
+  .notification {
+    right: 1rem;
+  }
+  .home {
+    min-height: 300px;
+  }
+  .home-text {
+    padding-right: 0.5rem;
+  }
+  .home-text h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .menu {
+    justify-content: flex-end;
+  }
+  .nav {
+    padding: 8px 0;
+  }
+  .nav-icons .bx,
+  .menu-icon {
+    height: 40px;
+    width: 40px;
+  }
+  .home {
+    min-height: 240px;
+  }
+  .home-text {
+    padding-right: 0.5rem;
+  }
+  .home-text h1 {
+    font-size: 0.8rem;
+  }
+  .p {
+    font-size: 0.875rem;
+  }
+}
+
+/* For Small Devices */
+@media (max-width: 360px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+  .navbar a {
+    font-size: 1.3rem;
+  }
+  .navbar a:hover {
+    font-size: 1.4rem;
+  }
+  .notification {
+    width: 270px;
+  }
 }

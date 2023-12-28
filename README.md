@@ -1,12 +1,12 @@
 # Jogos Jogados
 
-Página destinada aos jogos que joguei durante minha vida.
+Página destinada a apresentar os jogos que joguei durante minha vida.
 
 ![preview](./.github/light-mode.jpg)
 ![preview](./.github/dark-mode.jpg)
 
 
-[🔗 Clique aqui para acessar](https://samuells77.github.io/sls-links/)
+[🔗 Clique aqui para acessar](https://samuells77.github.io/jogos-jogados/index.html)
 
 ## 🧰 Tecnologias
 
